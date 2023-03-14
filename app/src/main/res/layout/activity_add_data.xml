@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@xml/listvievstyle"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="English"
+            android:textSize="30sp"></TextView>
+        <EditText
+            android:id="@+id/engText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1">
+
+            <requestFocus></requestFocus>
+        </EditText>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="Russian"
+            android:textSize="30sp">
+
+        </TextView>
+        <EditText
+            android:id="@+id/ruText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1">
+
+            <requestFocus></requestFocus>
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@xml/listvievstyle"
+        android:shadowColor="#467FB0"
+        android:shadowDx="4"
+        android:shadowDy="0"
+        android:shadowRadius="10"
+        android:text="ADD"
+        android:textColor="#DB7704"
+        android:textSize="32sp" />
+</LinearLayout>

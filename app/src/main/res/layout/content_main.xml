@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.vitaliy.myenglishproject.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@color/mycolor">
+
+    <LinearLayout
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+
+        >
+
+
+        <EditText
+            android:id="@+id/inputSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@xml/topelement_style"
+            android:hint="Search "
+
+            android:inputType="textAutoComplete" />
+
+        <Button
+            android:id="@+id/searchbutton"
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:background="@xml/topelement_style"
+            android:onClick="onClick"
+            android:shadowColor="#467FB0"
+            android:shadowDx="4"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:text="search"
+            android:textColor="#DB7704"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/translate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="2dp"
+            android:background="@xml/topelement_style"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+
+</LinearLayout>
